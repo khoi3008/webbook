@@ -1,0 +1,11 @@
+3version: '3.8'
+services:
+ postgres:
+  image: 'postgres:latest'
+  environment:
+    - POSTGRES_DB=books
+    - POSTGRES_PASSWORD=123
+    - POSTGRES_USER=khoi
+    - TZ=Asia/Ho_Chi_Minh
+  ports:
+    - '5432:5432'
